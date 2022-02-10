@@ -8,6 +8,15 @@
     <meta charset="UTF-8">
     <title>portfolio</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <style>
         /*Navigation bar --> styles*/
         header {
@@ -37,18 +46,24 @@
         }
 
         nav > ul > li {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             display: inline-flex;
             margin-left: 93px;
             margin-right: 34px;
             color: white;
-            padding: 0 10px 0 10px;
+            padding: 0 11px 0 11px;
             justify-content: center;
         }
 
-        /*First Content*/
+        /*First Content Started*/
 
-        #firstContent>img{
+        /* .about{
+             position: relative;
+             width: 100%;
+             height: 100px;
+         }*/
+
+        #firstContent > img:nth-child(1) {
             position: relative;
             width: 100%;
             height: 100vh;
@@ -56,12 +71,99 @@
             background-size: cover;
         }
 
-        #firstContent>#H1-1{
+        #firstContent > #H1-1 {
+            font-size: 76px;
             position: absolute;
-            top: 36vh;
-            left: 85vh;
+            top: 23vh;
+            left: 68vh;
             color: white;
+            font-family: 'Nunito Sans', sans-serif;
         }
+
+        #firstContent > #H2-1 {
+            position: absolute;
+            top: 42vh;
+            left: 81vh;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 4vh;
+            letter-spacing: 1px;
+        }
+
+        #firstContent > #H2-2 {
+            position: absolute;
+            top: 50vh;
+            left: 91vh;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 4vh;
+            letter-spacing: 1px;
+        }
+
+        #ul-1 {
+            list-style: none;
+        }
+
+        li > a > #youtube {
+            position: absolute;
+            top: 60vh;
+            left: 63vh;
+        }
+
+        li > a > #github {
+            position: absolute;
+            top: 440px;
+            left: 86vh;
+            width: 58px;
+            height: 58px;
+        }
+
+        li > a > #linkedin {
+            position: absolute;
+            left: 106vh;
+            top: 441px;
+            width: 54px;
+            height: 54px;
+        }
+
+        li > a > #instagram {
+            position: absolute;
+            top: 436px;
+            left: 125vh;
+            width: 62px;
+            height: 61px;
+        }
+
+        li > a > #messenger {
+            position: absolute;
+            left: 145vh;
+            top: 429px;
+            width: 68px;
+            height: 68px;
+        }
+
+        /*First Content Ended*/
+
+
+        /*Second Content Started*/
+
+        .second{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+          }
+
+        #secondContent > img {
+            position: relative;
+            height: 101vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+
 
     </style>
 </head>
@@ -83,11 +185,36 @@
 
 <main>
     <!--section 1 -> Home -->
-    <section id="firstContent">
-        <img src="assets/images/back1.jpg" alt="back1">
+    <section class="about" id="firstContent">
+        <img alt="back1" src="assets/images/back1.jpg">
         <h1 id="H1-1">Oshada Eranga.</h1>
+        <h2 id="H2-1">I'm Full Stack Developer.</h2>
+        <h2 id="H2-2">I'm Youtuber.</h2>
+        <ul id="ul-1">
+
+            <li><a href="https://github.com/oshadaera68"><img alt="github" height=70 id="github"
+                                                              src="assets/images/github.png" width=70></a></li>
+            <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=70
+                                                                                        id="youtube"
+                                                                                        src="assets/images/youtube.png"
+                                                                                        width=70></a></li>
+            </li>
+            <li><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin" height=70
+                                                                                    id="linkedin"
+                                                                                    src="assets/images/linkedin.png"
+                                                                                    width=70></a></li>
+            <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=70 id="instagram"
+                                                                      src="assets/images/instagram.png"
+                                                                      width=70></a></li>
+
+            <li><a href="https://m.me/oshada.eranga.39"><img alt="messenger" height=70 id="messenger"
+                                                             src="assets/images/messenger.png"
+                                                             width=70></a></li>
+        </ul>
     </section>
-    <section id="secondContent"></section>
+    <section id="secondContent" class="second">
+        <img alt="back2" src="assets/images/back2.jpg">
+    </section>
     <section id="thirdContent"></section>
     <section id="forthContent"></section>
     <section id="fifthContent"></section>
