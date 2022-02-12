@@ -79,10 +79,10 @@
         }
 
         #firstContent > #H1-1 {
-            font-size: 76px;
+            font-size: 89px;
             position: absolute;
             top: 23vh;
-            left: 68vh;
+            left: 66vh;
             color: white;
             font-family: 'Nunito Sans', sans-serif;
         }
@@ -90,21 +90,11 @@
         #firstContent > #H2-1 {
             position: absolute;
             top: 42vh;
-            left: 81vh;
+            left: 90vh;
             font-family: 'Ubuntu', sans-serif;
             color: white;
             font-size: 4vh;
-            letter-spacing: 1px;
-        }
-
-        #firstContent > #H2-2 {
-            position: absolute;
-            top: 50vh;
-            left: 91vh;
-            font-family: 'Ubuntu', sans-serif;
-            color: white;
-            font-size: 4vh;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         #ul-1 {
@@ -113,8 +103,10 @@
 
         li > a > #youtube {
             position: absolute;
-            top: 60vh;
-            left: 63vh;
+            top: 439px;
+            left: 65vh;
+            width: 66px;
+            height: 66px;
         }
 
         li > a > #github {
@@ -143,10 +135,10 @@
 
         li > a > #messenger {
             position: absolute;
-            left: 145vh;
+            left: 143vh;
             top: 429px;
-            width: 68px;
-            height: 68px;
+            width: 64px;
+            height: 64px;
         }
 
         #but1 {
@@ -218,10 +210,28 @@
             left: 132vh;
         }
 
-
         /*Second Content Ended*/
 
+        /*typewriter animation started*/
+
+        .typewriter {
+            font-size: 4rem;
+            font-weight: 700;
+            border-right: 4px solid #ff312e;
+            padding-right: 8px;
+            animation: blink 3s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-right: 4px solid transparent;
+            }
+        }
+
+        /*typewriter animation ended*/
+
     </style>
+
 </head>
 <body>
 <header>
@@ -244,8 +254,8 @@
     <section class="about" id="firstContent">
         <img alt="back1" src="assets/images/back1.jpg">
         <h1 id="H1-1">Oshada Eranga.</h1>
-        <h2 id="H2-1">I'm Full Stack Developer.</h2>
-        <h2 id="H2-2">I'm Youtuber.</h2>
+        <h2 id="H2-1" class="typewriter"></h2>
+
         <ul id="ul-1">
 
             <li><a href="https://github.com/oshadaera68"><img alt="github" height=70 id="github"
@@ -287,4 +297,9 @@
 </main>
 
 </body>
+<script src="assets/Javascript/typewriter.js"></script>
+<script src="assets/Javascript/snow.js"></script>
+
+
+
 </html>
